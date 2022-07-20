@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-attachment: fixed;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container{
+    width: 600px;
+    background-color: white;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.left{
+    width: 45%;
+    position: relative;
+}
+.niewystaje{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.right{
+    width: 55%;
+}
+.title{
+    height: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.rest{
+    height: 83%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.left img{
+    position: absolute;
+}
+.im1{
+    width: 280%;
+    left: -510px;
+    top: -230px;
+}
+.im2{
+    width: 109%;
+    left: -50px;
+    top: 100px;
+}
+.im3{
+    width: 45%;
+    left: -80px;
+    top: 185px;
+}
+
+.hidden{
+    display: none;
+}
+
+.question{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-bottom: 2px solid hsl(240, 5%, 91%);
+    cursor: pointer;
+}
+.question p{
+    margin-bottom: 10px;
+}
+.question img{
+    flex-basis: 5%;
+}
+.question .tostrong{
+    flex-basis: 95%;
+}
+.anim{
+    transition: all .6s;
+    transform: scaleY(10%);
+}
+.max{
+    transform: scaleY(100%);
+}
+.answer{
+    height: 80px;
+}
+.strong{
+    font-weight: 700;
+}
+.tostrong:hover{
+    color: hsl(14, 88%, 65%);
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.right img{
+    transition: all .6s;
+}
+
+@media (max-width: 700px){
+    
+    .container{
+        height: 560px;
+        width: 380px;
+        display: block;
+        margin-top: 110px;
+    }
+    .left{
+        height: 20%;
+        width: 100%;
+    }
+    .right{
+        height: 80%;
+        width: 100%;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    .question{
+        width: 94%;
+        margin: 0% 3%;
+        justify-content: space-between;
+    }
+    .niewystaje{
+        overflow: visible;
+    }
+
+    .im1{
+        width: 80%;
+        left: 35px;
+        top: -180px;
+    }
+    .im2{
+        width: 70%;
+        left: 60px;
+        top: -120px;
+    }
+    .im3{
+        width: 26%;
+        left: 55px;
+        top: -40px;
+    }
+}
